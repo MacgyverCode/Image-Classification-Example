@@ -30,6 +30,28 @@ docker exec -it _container_id_ bash
 
 # From Within the Tensor Flow Docker Container Shell
 
+Create a folder called "training_images" with subdirectories for each image category we want to include in our model.
+
+```bash
+mkdir training_images
+```
+
+Structure the folders like the following.
+```bash
+/training_images
+   /pens
+   /laptops
+   /chairs
+```
+
+Copy this directory from our local machine into our docker container.
+
+```bash
+docker cp training_images _container_id_:/
+```
+
+
+
 ## Training
 ```bash
 python tensorflow/tensorflow/examples/image_retraining/retrain.py \
