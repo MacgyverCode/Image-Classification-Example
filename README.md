@@ -9,17 +9,24 @@ In order to train the classifier we need to create a directory to house our imag
 
 
 ## Download the Tensor Flow Docker Container
+```bash
 docker pull gcr.io/tensorflow/tensorflow:latest-devel
+```
 
 ## Stand Up the Container
+```bash
 docker run -it -d gcr.io/tensorflow/tensorflow:latest-devel
+```
 
 ## List Running Containers
+```bash
 docker ps -a
+```
 
 ## Log Into Tensor Flow Container
+```bash
 docker exec -it _container_id_ bash
-
+```
 
 # From Within the Tensor Flow Docker Container Shell
 
@@ -34,12 +41,12 @@ python tensorflow/tensorflow/examples/image_retraining/retrain.py \
 ```
 
 ## Prediction
-
+```bash
 python tensorflow/tensorflow/examples/image_retraining/label_image.py \
 --graph=/retrained_graph.pb \
 --labels=/retrained_labels.txt \
 --image=/test-image.jpeg 
-
+```
 
 
 
