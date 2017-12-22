@@ -24,7 +24,7 @@ docker exec -it _container_id_ bash
 # From Within the Tensor Flow Docker Container Shell
 
 ## Training
-```python
+```bash
 python tensorflow/tensorflow/examples/image_retraining/retrain.py \
 --bottleneck_dir=/bottlenecks \
 --model_dir=/inception \
