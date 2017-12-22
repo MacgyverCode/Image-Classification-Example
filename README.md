@@ -21,17 +21,17 @@ docker ps -a
 docker exec -it _container_id_ bash
 
 
-#From Within the Tensor Flow Docker Container Shell
+# From Within the Tensor Flow Docker Container Shell
 
 ## Training
-
+```python
 python tensorflow/tensorflow/examples/image_retraining/retrain.py \
 --bottleneck_dir=/bottlenecks \
 --model_dir=/inception \
 --output_labels=/retrained_labels.txt \
 --output_graph=/retrained_graph.pb \
 --image_dir=/training_images/
-
+```
 
 ## Prediction
 
