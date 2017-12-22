@@ -57,6 +57,8 @@ docker cp training_images _container_id_:/
 
 
 ## Training
+This script will write both "retrained_labels.txt" and "retrained_graph.pb" this is our model. 
+
 ```bash
 python tensorflow/tensorflow/examples/image_retraining/retrain.py \
 --bottleneck_dir=/bottlenecks \
@@ -67,6 +69,9 @@ python tensorflow/tensorflow/examples/image_retraining/retrain.py \
 ```
 
 ## Prediction
+
+We run a prediction and pass our trained model "retrained_graph.pb" along with out labels "retrained_labels.txt" as well as our novel test image "test-image.jpeg".
+
 ```bash
 python tensorflow/tensorflow/examples/image_retraining/label_image.py \
 --graph=/retrained_graph.pb \
