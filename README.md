@@ -7,6 +7,7 @@ Easy and Accurate Image Classification with Tensor Flow
 
 In order to train the classifier we need to create a directory to house our images. In this example we create a directory in our root folder called training_images. In that directory we create subdirectories of all the image categories we want to train the model on. The training program will create labels from the names of the subdirectories and then train the model on the images provided.
 
+We will also do our work from a pre-configured docker container in order to minimize development overhead.
 
 ## Download the Tensor Flow Docker Container
 ```bash
