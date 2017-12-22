@@ -36,10 +36,13 @@ Create a folder called "training_images" with subdirectories for each image cate
 mkdir training_images
 ```
 
-Structure the folders like the following.
+Structure the folders like the following. The model will create labels from the names of the folders. So in this case there will be three categories: "pens", "laptops", "chairs". The names and file extensions of these images don't matter.
 ```bash
 /training_images
    /pens
+      image1.jpg
+      image2.jpg
+      ...
    /laptops
    /chairs
 ```
