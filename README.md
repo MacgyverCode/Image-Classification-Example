@@ -93,7 +93,7 @@ mkdir macgyver
 mkdir /temp/macgyver
 ```
 
-## Create a Data file
+## Create a Data File
 This file will represent the client payload JSON when they hit our API.
 ```bash
 cd /macgyver/temp
@@ -101,7 +101,7 @@ vim data.json
 ```
 
 ## Create Our main File
-This file will run when a user requests this program from the API
+This file will read "/temp/data.json" download the image and run the prediction model against that image when a user makes an API request.
 
 ```bash
 vim main
