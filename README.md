@@ -79,6 +79,52 @@ python tensorflow/tensorflow/examples/image_retraining/label_image.py \
 --image=/test-image.jpeg 
 ```
 
+# Push Model to Macgyver Marketplace
+
+## Create a /macgyver Directory
+
+```bash
+mkdir macgyver
+``` 
+
+## Create a /macgyver/temp Directory
+
+```bash
+mkdir /temp/macgyver
+```
+
+## Create a Data file
+This file will represent the client payload JSON when they hit our API.
+```bash
+cd /macgyver/temp
+vim data.json
+```
+
+## Create Our main File
+This file will run when a user requests this program from the API
+
+```bash
+vim main
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
