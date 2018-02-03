@@ -10,12 +10,12 @@ We will also do our work from a pre-configured docker container in order to mini
 
 ## Download the Tensor Flow Docker Container
 ```bash
-docker pull gcr.io/tensorflow/tensorflow:latest-devel
+docker pull macgyvertechnology/tensorflow
 ```
 
 ## Stand Up the Container
 ```bash
-docker run -it -d gcr.io/tensorflow/tensorflow:latest-devel
+docker run -it -d macgyvertechnology/tensorflow
 ```
 
 ## List Running Containers
